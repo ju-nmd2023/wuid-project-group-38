@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ahe7seo.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ahe7seo.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="homepage.html"><p id="logo">billie</p></a>
+
+      <div class="dropdown">
+        <button onclick="toggleDropdown()" class="dropdown-btn">
+          <img src="photos/menu.png" alt="dropdown icon" id="dropdown-icon" />
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a>New In</a>
+          <a>Bestsellers</a></li>
+          <a>Rings</a></li>
+          <a>Necklaces</a></li>
+          <a>Bracelets</a></li>
+          <a href="earrings.html">Earrings</a></li>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li id="new-in">New In</li>
+          <li>Bestsellers</li>
+          <li>Rings</li>
+          <li>Necklaces</li>
+          <li>Bracelets</li>
+          <li><a href="earrings.html">Earrings</a></li>
+        </ul>
+      </nav>
+      <div id="icons">
+        <img src="photos/like.png" alt="favorites" />
+        <img src="photos/user.png" alt="user" />
+        <div id="cartCounter">0</div>
+        <a href="cart.html"><img src="photos/bag.png" alt="cart" /></a>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <div class="front-photos">
+        <img
+          id="gold-green-earrings"
+          src="photos/main-picture.webp"
+          alt="gold and green earrings"
+          
+        />
+        <img id="jewlery-girl" src="photos/jewlery-girl.webp" />
+      </div>
+      <!-- main picture -->
+
+      <h1 >Categories</h1>
+      <div id="categories-grid-container">
+        <figure>
+          <img
+            src="photos/category-rings.jpg"
+            alt="ring picture"
+            class="categories-pictures"
+          />
+          <figcaption>Rings</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="photos/category-necklaces.jpg"
+            alt="necklace picture"
+            class="categories-pictures"
+          />
+          <figcaption>Necklaces</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="photos/category-bracelets.jpg"
+            alt="bracelet picture"
+            class="categories-pictures"
+          />
+          <figcaption>Bracelets</figcaption>
+        </figure>
+
+        <a href="earrings.html"
+          ><figure>
+            <img
+              src="photos/category-earrings.jpg"
+              alt="earrings picture"
+              class="categories-pictures"
+            />
+            <figcaption>Earrings</figcaption>
+          </figure></a
+        >
+      </div>
+
+      <h1>Bestsellers</h1>
+      <div id="bestsellers-grid-container">
+        <figure>
+          <img
+            src="photos/bestsellers-1.jpg"
+            alt="bow earrings"
+            class="bestsellers-pictures"
+          />
+          <figcaption>Bow Earrings</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="photos/bestsellers-2.jpg"
+            alt="pearl necklace"
+            class="bestsellers-pictures"
+          />
+          <figcaption>Pearl Necklace</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="photos/bestsellers-3.jpg"
+            alt="cross necklace"
+            class="bestsellers-pictures"
+          />
+          <figcaption>Cross Necklace</figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div id="grid-footer-container">
+        <div>
+          <p >CONTACTS</p>
+          <li class="footer-li">Instagram</li>
+          <li class="footer-li">Tik Tok</li>
+          <li class="footer-li">Facebook</li>
+          <li class="footer-li">Pinterest</li>
+          <li class="footer-li">Twitter</li>
+        </div>
+
+        <div >
+          <p >CUSTOMER CARE</p>
+          <li class="footer-li">Contact Us</li>
+          <li class="footer-li">Warranty</li>
+          <li class="footer-li">Shipping</li>
+          <li class="footer-li">Returns&Exchange</li>
+          <li class="footer-li">Size Guide</li>
+          <li class="footer-li">Terms and Conditions</li>
+          <li class="footer-li">FAQ</li>
+        </div>
+
+        <div >
+          <p >ABOUT US</p>
+          <li class="footer-li">Our Story</li>
+          <li class="footer-li">Collaborations</li>
+          <li class="footer-li">Job Opportunities</li>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

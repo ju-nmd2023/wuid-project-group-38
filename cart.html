@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ahe7seo.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="homepage.html"><p id="logo">billie</p></a>
+
+      <div class="dropdown">
+        <button onclick="toggleDropdown()" class="dropdown-btn">
+          <img src="photos/menu.png" alt="dropdown icon" id="dropdown-icon" />
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a>New In</a>
+          <a>Bestsellers</a></li>
+          <a>Rings</a></li>
+          <a>Necklaces</a></li>
+          <a>Bracelets</a></li>
+          <a href="earrings.html">Earrings</a></li>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a>New In</a></li>
+          <li><a>Bestsellers</a></li>
+          <li><a>Rings</a></li>
+          <li><a>Necklaces</a></li>
+          <li><a>Bracelets</a></li>
+          <li><a href="earrings.html">Earrings</a></li>
+        </ul>
+      </nav>
+      <div id="icons">
+        <img src="photos/like.png" alt="favorites" />
+        <img src="photos/user.png" alt="user" />
+        <div id="cartCounter1">1</div>
+        <a href="cart.html"><img src="photos/bag.png" alt="cart" /></a>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main-cart">
+      <!-- your cart section -->
+
+      <div id="yccontainer">
+        <h1 id="your-cart">Your cart</h1>
+        <hr />
+        <div id="yourcart-grid">
+          <img
+            src="photos/main-rainbow-earrings.jpg"
+            alt=""
+            id="cart-picture"
+          />
+          <div id="product-info">
+          <p>Rainbow Drop Earrings</p>
+          <p>Gold </p>
+          <p>€20,00</p>
+          </div>
+        </div>
+        <hr />
+        <div class="cart-text">
+          <p>Subtotal</p>
+          <p>€20,00</p>
+        </div>
+        <div class="cart-text">
+          <p>Shipping</p>
+          <p>€6,00</p>
+        </div>
+        <div class="cart-text">
+          <p>Total</p>
+          <p>€26,00</p>
+        </div>
+      </div>
+      <!-- you might also like section -->
+      <h1 >You might also like...</h1>
+
+      <div class="ymal-grid-container">
+        <figure>
+          <img
+            src="photos/sun-earrings.jpg"
+            alt="sun hoops"
+            class="ymal-pictures"
+          />
+          <figcaption>Sun Hoops</figcaption><figcaption>17€</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="photos/red-heart-earrings.jpg"
+            alt="red heart earrings"
+            class="ymal-pictures"
+          />
+          <figcaption>Red Heart Earrings</figcaption><figcaption>23€</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="photos/ribbon-earrings.jpg"
+            alt="ribbon earrings"
+            class="ymal-pictures"
+          />
+          <figcaption>Blue Gems Ribbons</figcaption><figcaption>17€</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="photos/star-earrings.jpg"
+            alt="star earrings"
+            class="ymal-pictures"
+          />
+          <figcaption>Star Earrings</figcaption><figcaption>16€</figcaption>
+        </figure>
+      </div>
+
+      <!-- contact and shipping information form -->
+      <div id="contact-box">
+        <h2 class="form-titles">Contact information</h2>
+        <hr />
+        <form>
+          
+          <input type="text" placeholder="Name" required />
+          <input type="text" placeholder="Surname" required />
+          <input
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <input type="text" placeholder="Phone Number" />
+        </form>
+
+        <h2 class="form-titles">Shipping Information</h2>
+        <hr />
+
+        <form>
+          <input type="text" placeholder="Name" required />
+          <input type="text" placeholder="Surname" required />
+          <input type="text" placeholder="Phone Number" />
+          <input type="text" placeholder="Country" required />
+          <input type="text" placeholder="City" required />
+          <input type="text" placeholder="Address" required />
+          <input type="text" placeholder="Postcode" required />
+          <input
+            type="text"
+            placeholder="Additional address information (optional)"
+          />
+        </form>
+
+        <h2 class="form-titles">Payment Information</h2>
+        <hr />
+        <form>
+          <input type="text" placeholder="Card Number" required />
+          <input type="text" placeholder="Expiration Date" required />
+          <input type="text" placeholder="CVV" />
+        </form>
+      </div>
+      
+      <a href="thankyou-page.html"><button id="buttoncart">Confirm Payment</button></a>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div id="grid-footer-container">
+        <div>
+          <p >CONTACTS</p>
+          <li class="footer-li">Instagram</li>
+          <li class="footer-li">Tik Tok</li>
+          <li class="footer-li">Facebook</li>
+          <li class="footer-li">Pinterest</li>
+          <li class="footer-li">Twitter</li>
+        </div>
+
+        <div >
+          <p >CUSTOMER CARE</p>
+          <li class="footer-li">Contact Us</li>
+          <li class="footer-li">Warranty</li>
+          <li class="footer-li">Shipping</li>
+          <li class="footer-li">Returns&Exchange</li>
+          <li class="footer-li">Size Guide</li>
+          <li class="footer-li">Terms and Conditions</li>
+          <li class="footer-li">FAQ</li>
+        </div>
+
+        <div >
+          <p >ABOUT US</p>
+          <li class="footer-li">Our Story</li>
+          <li class="footer-li">Collaborations</li>
+          <li class="footer-li">Job Opportunities</li>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

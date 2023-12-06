@@ -1,0 +1,758 @@
+/* ALL PAGES */
+body {
+  background-color: #fffcf7;
+  margin: 0;
+}
+
+h1 {
+  padding-left: 2.5rem;
+  font-family: "playfair-display", serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/*header*/
+header {
+  display: flex;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+}
+
+#icons {
+  display: flex;
+}
+
+#icons img {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0.4rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+li {
+  padding: 0.8rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  margin: 0;
+}
+
+a:hover,
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#logo {
+  font-family: "joly-display", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25pt;
+  padding-left: 2rem;
+}
+
+#dropdown-icon,
+.dropdown {
+  display: none;
+}
+
+/* dropdown menu for navigation */
+@media screen and (max-width: 745px) {
+  #dropdown-icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  #logo {
+    padding-left: 3.5rem;
+  }
+
+  #icons img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0.5;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  .dropdown-btn {
+    background-color: white;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    left: 0.5rem;
+    top: 0.5rem;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    top: 3rem;
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+}
+
+/*footer*/
+footer {
+  background-color: #3d405b;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  color: white;
+}
+
+#grid-footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0 15px;
+}
+
+.footer-li {
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 410px) {
+  .grid-footer-container {
+    font-size: smaller;
+    gap: 5px;
+    padding-left: 25px;
+  }
+}
+
+/* HOMEPAGE */
+
+/*front pictures*/
+.front-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+#gold-green-earrings,
+#jewlery-girl {
+  width: 100%;
+  padding-top: 3rem;
+}
+
+/*categories*/
+#categories-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+figcaption {
+  font-size: 1rem;
+}
+
+.categories-pictures {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  #categories-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*bestsellers*/
+#bestsellers-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  object-fit: cover;
+}
+
+.bestsellers-pictures {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  #bestsellers-grid-container {
+    grid-template-columns: 1fr;
+    object-fit: cover;
+  }
+}
+
+/* EARRINGS PRODUCT PAGE */
+
+/*h1*/
+#earrings-title {
+  margin-top: 0;
+  margin-left: 1rem;
+}
+
+#h1andicon {
+  display: flex;
+  padding-top: 7rem;
+}
+
+/*earring types buttons*/
+#grid-earringtypes {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  justify-content: left;
+  margin-left: 1rem;
+}
+
+.earringtypes {
+  background-color: #e07a5f;
+  border: none;
+  border-radius: 0.2rem;
+  height: 2rem;
+  color: white;
+  width: 8rem;
+  margin-bottom: 4rem;
+  animation-name: growEarringButton;
+}
+
+button:hover {
+  animation: growEarringButton 1.5s ease-in-out forwards;
+}
+
+@keyframes growEarringButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/*dropdown for earring types*/
+#category-dropdown-icon,
+#cd-container,
+#category-dropdown {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .earringtypes {
+    display: none;
+  }
+
+  #category-dropdown-icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  #cd-container {
+    display: block;
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+  }
+
+  .category-dropdown-btn {
+    background-color: #fffcf7;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  #category-dropdown {
+    background-color: white;
+    width: 30%;
+    height: 8rem;
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .content {
+    padding-right: 5rem;
+    white-space: nowrap;
+    line-height: 1.6rem;
+  }
+
+  #category-dropdown a:hover {
+    background-color: #f1f1f1;
+  }
+}
+
+/*products grid*/
+#earrings-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 0;
+  align-items: center;
+  clear: both;
+}
+
+.earrings-pictures {
+  width: 100%;
+}
+
+@media screen and (max-width: 985px) {
+  #earrings-grid-container {
+    grid-template-columns: 1fr 1fr;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #earrings-grid-container {
+    grid-template-columns: 1fr;
+    object-fit: cover;
+  }
+}
+
+/* DETAIL PAGE */
+#detail-page-grid-1 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+#main-product-picture {
+  width: 100%;
+}
+
+#secondary-pictures /*this is the grid for the small pictures*/ {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.product-pictures /*these are the three pictures inside the grid*/ {
+  width: 60%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+#description-and-buttons {
+  text-align: left;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#billie {
+  font-family: "joly-display", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3d405b;
+}
+
+#color-dropdown {
+  width: 100%;
+  height: 5%;
+  background-color: #3d405b;
+  color: white;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+#add-to-cart-button {
+  width: 100%;
+  height: 2rem;
+  background-color: #3d405b;
+  color: white;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  animation-name: growButton;
+}
+
+#add-to-cart-button:hover {
+  animation: growButton 1.5s ease-in-out forwards;
+}
+@keyframes growButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  #detail-page-grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 6rem;
+  }
+
+  #main-product-picture {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  #secondary-pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1%;
+    width: 80%;
+    margin-left: 7%;
+    margin-bottom: 5%;
+  }
+
+  .product-pictures {
+    width: 100%;
+  }
+
+  #billie {
+    font-family: "joly-display", sans-serif;
+    font-size: 18pt;
+    font-weight: bold;
+    color: #3d405b;
+  }
+
+  #name-price {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  #product-description {
+    margin-bottom: 3rem;
+  }
+
+  #color-dropdown {
+    height: 2rem;
+    margin-top: 1rem;
+    background-color: #3d405b;
+    color: white;
+  }
+}
+
+/*you might also like grid*/
+.ymal-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.ymal-pictures {
+  width: 100%;
+  align-items: center;
+}
+
+@media screen and (max-width: 950px) {
+  .ymal-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ymal-grid-container2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ymal-grid-container {
+    grid-template-columns: 1fr;
+  }
+  .ymal-grid-container2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CART PAGE*/
+
+/*your cart box*/
+#main-cart {
+  padding-top: 4rem;
+}
+
+#yccontainer {
+  background-color: white;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+#yourcart-grid {
+  display: flex;
+  align-content: center;
+  font-size: 1rem;
+}
+#cart-picture {
+  width: 30%;
+  max-width: 13rem;
+  margin: 2rem;
+}
+#product-info {
+  margin-top: 1rem;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#your-cart {
+  font-family: "roboto-slab", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: #3d405b;
+  padding-top: 1.8rem;
+}
+
+.cart-text {
+  color: #3d405b;
+  font-family: "roboto-slab", serif;
+  font-style: normal;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/*form*/
+.form-titles {
+  font-family: "roboto-slab", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5;
+  padding-top: 0.7rem;
+  padding-left: 2rem;
+  color: #3d405b;
+}
+
+input {
+  margin: 0.4rem;
+  width: 35%;
+  margin-left: 2rem;
+  height: 1.8rem;
+  font-family: "roboto-slab", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-right: 2rem;
+}
+
+#contact-box {
+  width: 90%;
+  margin-left: 5%;
+  height: auto;
+  background-color: white;
+  border-radius: 0.3rem;
+  text-align: center;
+  padding-top: 1rem;
+  border-color: #ecebe7;
+  border-style: solid;
+  border-width: 0.15rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: left;
+}
+
+#buttoncart {
+  margin-left: 5%;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  width: 15rem;
+  height: 2rem;
+  background-color: #3d405b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  animation-name: growConfirmButton;
+}
+
+#buttoncart:hover {
+  animation: growConfirmButton 1.5s ease-in-out forwards;
+}
+
+@keyframes growConfirmButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* THANK YOU PAGE */
+#thankyou-box {
+  display: flex;
+  background-color: #3d405b;
+  color: white;
+  margin-top: 5%;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  align-items: center;
+  height: 5rem;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  font-family: "roboto-slab", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+
+#confirmation-box {
+  padding-top: 1rem;
+  background-color: #3d405b;
+  color: white;
+  margin-top: 5%;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  align-items: center;
+  height: 20rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  font-family: "roboto-slab", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 475px) {
+  #thankyou-box,
+  #confirmation-box {
+    font-size: 1rem;
+  }
+  #confirmation-box {
+    height: 10rem;
+  }
+}
+
+#home-button {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  width: 15rem;
+  height: 2rem;
+  background-color: #3d405b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 3rem;
+  margin-left: 10rem;
+  animation-name: growEarringButton;
+}
+
+@media screen and (max-width: 450px) {
+  #home-button {
+    margin-left: 3rem;
+  }
+}
+
+#tick-container {
+  margin-left: 48%;
+}
+
+@media screen and (max-width: 840px) {
+  #tick-container {
+    margin-left: 45%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #tick-container {
+    margin-left: 40%;
+  }
+}
+
+/*tick animation*/
+.wrapper {
+  display: grid;
+  place-items: end;
+  width: 50px;
+  height: 50px;
+  margin-top: 2rem;
+  transform: rotate(45deg);
+  background-color: #3d405b;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+@keyframes tick-animation {
+  0%,
+  20% {
+    transform: scaleX(0);
+  }
+  30% {
+    transform: scaleX(1);
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.tick {
+  position: relative;
+  height: 8px;
+  width: 25px;
+  margin-right: 15px;
+  transform-origin: 0% 0%;
+  border-radius: 5px 5px 0 5px;
+  background: white;
+  animation: tick-animation 4s infinite;
+}
+
+@keyframes tick-before-animation {
+  0%,
+  30% {
+    transform: scaleY(0);
+  }
+  45% {
+    transform: scaleY(1);
+  }
+}
+
+.tick::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  width: 8px;
+  height: 50px;
+  transform-origin: 0% 100%;
+  border-radius: inherit;
+  background: inherit;
+  animation: tick-before-animation 4s infinite;
+}
+
+/*this animation was taken from Muhamad Alfian on Youtube*/
