@@ -379,6 +379,7 @@ button:hover {
   color: white;
   border-radius: 1rem;
   margin-top: 1rem;
+  padding-left: 1rem;
 }
 
 #add-to-cart-button {
