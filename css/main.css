@@ -295,20 +295,17 @@ button:hover {
 
   #category-dropdown {
     background-color: white;
-    width: 30%;
+    width: 6rem;
     height: 8rem;
     padding: 1rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
   .content {
-    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
     white-space: nowrap;
     line-height: 1.6rem;
-  }
-
-  #category-dropdown a:hover {
-    background-color: #f1f1f1;
   }
 }
 
@@ -453,6 +450,7 @@ button:hover {
 
   #color-dropdown {
     height: 2rem;
+    padding-left: 1rem;
     margin-top: 1rem;
     background-color: #3d405b;
     color: white;

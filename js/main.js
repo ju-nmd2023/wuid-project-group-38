@@ -1,3 +1,4 @@
+/*cart number*/
 let cartCount = 0;
 document.getElementById("cartCounter").innerText = cartCount;
 document
@@ -9,6 +10,7 @@ function addToCart() {
   document.getElementById("cartCounter").innerText = cartCount;
 }
 
+/*detail page image switch with dropdown color options*/
 function updateImages() {
   const dropdown = document.getElementById("color-dropdown");
   const mainProductPicture = document.getElementById("main-product-picture");
@@ -23,6 +25,7 @@ function updateImages() {
   }
 }
 
+/*header dropdown sidebar*/
 function toggleDropdown() {
   const dropdown = document.getElementById("myDropdown");
   dropdown.style.display =
@@ -38,6 +41,7 @@ window.onclick = function (event) {
   }
 };
 
+/*earrings categories dropdown*/
 function toggleCategoryDropdown() {
   const categorydropdown = document.getElementById("category-dropdown");
   categorydropdown.style.display =
