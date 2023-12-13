@@ -32,27 +32,9 @@ function toggleDropdown() {
     dropdown.style.display === "block" ? "none" : "block";
 }
 
-window.onclick = function (event) {
-  if (!event.target.matches(".dropdown-btn")) {
-    const dropdown = document.getElementById("myDropdown");
-    if (dropdown.style.display === "block") {
-      dropdown.style.display = "none";
-    }
-  }
-};
-
 /*earrings categories dropdown*/
 function toggleCategoryDropdown() {
   const categorydropdown = document.getElementById("category-dropdown");
   categorydropdown.style.display =
     categorydropdown.style.display === "block" ? "none" : "block";
 }
-
-window.onclick = function (event) {
-  if (!event.target.matches(".category-dropdown-btn")) {
-    const categorydropdown = document.getElementById("category-dropdown");
-    if (categorydropdown.style.display === "block") {
-      categorydropdown.style.display = "none";
-    }
-  }
-};
